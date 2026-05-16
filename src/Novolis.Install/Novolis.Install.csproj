@@ -1,11 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Novolis.Install</RootNamespace>
+    <AssemblyName>novolis</AssemblyName>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>novolis</ToolCommandName>
     <PackageId>Novolis.Install</PackageId>
+    <Title>Novolis Install</Title>
     <Version>0.1.0</Version>
-    <Description>Novolis package installer CLI</Description>
+    <Description>Cross-platform Novolis package installer and launcher (.NET global tool).</Description>
+    <PackageTags>novolis;cli;tool;installer</PackageTags>
+    <PackageProjectUrl>https://github.com/Novolis-Platform/novolis-install</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Novolis-Platform/novolis-install</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>

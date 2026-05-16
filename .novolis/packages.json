@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "Novolis.Install": {
+      "project": "src/Novolis.Install/Novolis.Install.csproj",
+      "paths": [
+        "src/Novolis.Install/**",
+        "tests/Novolis.Install.Tests/**",
+        "Directory.Build.props",
+        "Directory.Packages.props",
+        "global.json"
+      ]
+    }
+  }
+}
