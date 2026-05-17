@@ -1,14 +1,14 @@
 using Novolis.Install.Paths;
-using Xunit;
+using TUnit.Core;
 
 namespace Novolis.Install.Tests;
 
 public class NovolisPathsTests
 {
-    [Fact]
-    public void DataRoot_is_under_user_profile()
+    [Test]
+    public async Task DataRoot_is_under_user_profile()
     {
-        Assert.Contains("Novolis", NovolisPaths.DataRoot, StringComparison.OrdinalIgnoreCase);
-        Assert.DoesNotContain("..", NovolisPaths.DataRoot);
+        await Assert.That(NovolisPaths.DataRoot).Contains("Novolis", StringComparison.OrdinalIgnoreCase);
+        await Assert.That(NovolisPaths.DataRoot).DoesNotContain("..");
     }
 }

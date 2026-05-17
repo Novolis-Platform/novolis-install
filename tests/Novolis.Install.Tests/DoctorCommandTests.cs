@@ -1,13 +1,13 @@
-using Xunit;
+using TUnit.Core;
 
 namespace Novolis.Install.Tests;
 
 public class DoctorCommandTests
 {
-    [Fact]
+    [Test]
     public async Task Doctor_returns_success()
     {
         var exit = await Program.RunAsync(["doctor"]);
-        Assert.Equal(0, exit);
+        await Assert.That(exit).IsEqualTo(0);
     }
 }
