@@ -4,8 +4,15 @@ using Novolis.Install.Registry;
 
 namespace Novolis.Install.Commands;
 
+/// <summary>
+/// Builds the <c>novolis</c> command-line interface.
+/// </summary>
 public static class CommandBuilder
 {
+    /// <summary>
+    /// Creates the root command with search, install, list, and diagnostic subcommands.
+    /// </summary>
+    /// <returns>The configured <see cref="RootCommand"/> instance.</returns>
     public static RootCommand Build()
     {
         var root = new RootCommand("Novolis package installer and launcher");

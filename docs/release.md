@@ -1,6 +1,15 @@
 # Release
 
-- SemVer; `0.x` while unstable.
-- Tag must match package version: `v0.1.0` → `<Version>0.1.0</Version>`.
-- Publish only via GitHub Release → `nuget.org` environment (OIDC).
-- See [release policy](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/release-policy.md).
+## Versioning
+
+Tool versions are driven by `build/version.json` and shared Novolis MSBuild imports.
+
+## Publishing
+
+1. Tag or merge to `main` with green CI on `Novolis.Install.sln`
+2. Pack publishes `Novolis.Install` to GitHub Packages
+3. Users install via `dotnet tool install -g Novolis.Install`
+
+## Artifacts
+
+Releases ship the tool package, XML API documentation (for public helper types), symbols, and the package README at `src/Novolis.Install/README.md`.
