@@ -7,8 +7,7 @@
     <ToolCommandName>novolis</ToolCommandName>
     <PackageId>Novolis.Install</PackageId>
     <Title>Novolis Install</Title>
-    <Version>0.1.0</Version>
-    <Description>Cross-platform Novolis package installer and launcher (.NET global tool).</Description>
+<Description>Cross-platform Novolis package installer and launcher (.NET global tool).</Description>
     <PackageTags>novolis;cli;tool;installer</PackageTags>
     <PackageProjectUrl>https://github.com/Novolis-Platform/novolis-install</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Novolis-Platform/novolis-install</RepositoryUrl>
