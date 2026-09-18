@@ -1,6 +1,7 @@
 # Getting started
 
-Install the **Novolis.Install** global tool to search the Novolis registry, inspect packages, and manage local installs.
+Install the **Novolis.Install** global tool from `novolis-tools` to search the
+Novolis registry, inspect packages, and manage local installs.
 
 ## Prerequisites
 
@@ -31,8 +32,8 @@ novolis doctor
 ## Build from source
 
 ```bash
-dotnet build Novolis.Install.sln
-dotnet run --project src/Novolis.Install -- doctor
+dotnet build d:\novolis\novolis-tools\Novolis.Tools.slnx
+dotnet run --project d:\novolis\novolis-tools\src\Novolis.Install -- doctor
 ```
 
 ## See also

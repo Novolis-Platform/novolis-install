@@ -2,7 +2,8 @@
 
 ## Package
 
-**Novolis.Install** is a `PackAsTool` executable (`novolis` command) built on `System.CommandLine`.
+**Novolis.Install** is a `PackAsTool` executable (`novolis` command) built on
+`System.CommandLine`; its host now lives in `novolis-tools`.
 
 ## Layout
 

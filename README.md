@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <strong>One CLI to install the ecosystem</strong><br/>
-  Cross-platform `novolis` installer CLI.
+  <strong>Archived installer host</strong><br/>
+  The `novolis` tool host moved to novolis-tools.
 </p>
 
 <p align="center">
@@ -41,26 +41,30 @@
 
 | Package | Install | Package README |
 |---------|---------|----------------|
-| `Novolis.Install` | `dotnet add package Novolis.Install` | [README](https://github.com/Novolis-Platform/novolis-install/blob/main/src/Novolis.Install/README.md) |
+| `Novolis.Install` | Published from [`novolis-tools`](https://github.com/Novolis-Platform/novolis-tools) | [tool README](https://github.com/Novolis-Platform/novolis-tools/tree/main/src/Novolis.Install) |
 
 For NuGet.org and Visual Studio, the **embedded** README.md inside each package is authoritative.
 
 <!-- novolis-package-index:end -->
-# novolis-install
+# novolis-install (archived host repository)
 
-Cross-platform **`novolis`** [.NET global tool](https://learn.microsoft.com/dotnet/core/tools/global-tools) for searching, installing, and managing packages from the [Novolis registry](https://github.com/Novolis-Platform/novolis-registry).
+The `novolis` executable host moved to
+[`novolis-tools`](https://github.com/Novolis-Platform/novolis-tools) so
+`PackAsTool` publishing is unified. This repository no longer contains a
+packable executable project.
 
 ## Package
 
 | Package | Description |
 |---------|-------------|
-| [Novolis.Install](src/Novolis.Install/README.md) | Global tool CLI (`search`, `doctor`, `install`, …) |
+| [Novolis.Install](https://github.com/Novolis-Platform/novolis-tools/tree/main/src/Novolis.Install) | Global tool CLI (`search`, `doctor`, `install`, …) |
 
 Restore and publish via **nuget.org** and **GitHub Packages** only. For local platform library work, use **`Novolis.Platform.slnx`** (ProjectReference mode) — not sibling-repo hacks in this tool project.
 
 ## What it is
 
-`Novolis.Install` is the user-facing CLI for the Novolis ecosystem. It reads the static registry, installs into per-user locations, and will integrate with platform installers (Inno on Windows) over time.
+`Novolis.Install` remains the user-facing CLI for the Novolis ecosystem, but
+its source and publishing workflow live in `novolis-tools`.
 
 ## Current status
 
